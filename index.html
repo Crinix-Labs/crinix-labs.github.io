@@ -1,1 +1,263 @@
-<meta name="google-adsense-account" content="ca-pub-2868494384024510">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crinix Cloud - Complete Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .animate-card {
+            @apply transition-transform duration-300 ease-out hover:-translate-y-2;
+        }
+
+        .map-node {
+            @apply absolute w-3 h-3 bg-cyan-400 rounded-full;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(34, 211, 238, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(34, 211, 238, 0); }
+        }
+
+        .world-map path {
+            @apply fill-zinc-800 stroke-zinc-700 transition-colors duration-300;
+        }
+
+        .world-map path:hover {
+            @apply fill-zinc-700;
+        }
+    </style>
+</head>
+<body class="font-['Inter'] bg-zinc-900 text-zinc-100">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-zinc-900/90 backdrop-blur-sm border-b border-zinc-800 z-50">
+        <nav class="container mx-auto px-4 py-4 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Crinix Cloud</a>
+            <div class="flex items-center gap-6">
+                <a href="#features" class="text-zinc-400 hover:text-cyan-400">Features</a>
+                <a href="#map" class="text-zinc-400 hover:text-cyan-400">Network</a>
+                <a href="#plans" class="text-zinc-400 hover:text-cyan-400">Plans</a>
+                <button class="bg-gradient-to-r from-cyan-600 to-blue-600 px-4 py-2 rounded-lg hover:opacity-90">Sign Up</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="container mx-auto px-4 py-20 text-center">
+            <h1 class="text-5xl font-bold mb-6">
+                Next-Gen Cloud Hosting
+                <span class="bg-blue-400 text-white text-transparent ">Built for Scale</span>
+            </h1>
+            <p class="text-zinc-400 text-xl mb-8 max-w-2xl mx-auto">Enterprise-grade infrastructure with global edge network and 99.99% uptime guarantee</p>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="container mx-auto px-4 py-16">
+            <div class="max-w-6xl mx-auto text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                    Powerful Features
+                </h2>
+                <p class="text-zinc-400">Everything you need to deploy and scale your applications</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Feature 1 -->
+                <div class="animate-card bg-zinc-800 p-8 rounded-xl border border-zinc-700">
+                    <div class="w-12 h-12 bg-cyan-400/10 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-2xl text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Enterprise Security</h3>
+                    <p class="text-zinc-400">Military-grade encryption with DDoS protection and automated threat detection</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="animate-card bg-zinc-800 p-8 rounded-xl border border-zinc-700">
+                    <div class="w-12 h-12 bg-cyan-400/10 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-rocket text-2xl text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Instant Deployment</h3>
+                    <p class="text-zinc-400">Global CDN with 200+ edge locations and automatic scaling</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="animate-card bg-zinc-800 p-8 rounded-xl border border-zinc-700">
+                    <div class="w-12 h-12 bg-cyan-400/10 rounded-lg mb-4 flex items-center justify-center">
+                        <i class="fas fa-infinity text-2xl text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">99.99% Uptime</h3>
+                    <p class="text-zinc-400">Guaranteed reliability with automated failover and 24/7 monitoring</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- World Map Section -->
+        <section id="map" class="container mx-auto px-4 py-16">
+            <div class="bg-zinc-800 rounded-2xl border border-zinc-700 p-4 relative h-[600px]">
+                <img src="blob:https://www.pngwing.com/a4dcbf70-89b8-4593-9030-2a1fdaf3cf2e" alt="World Map" class="world-map w-full h-full">
+                    <!-- Insert world map SVG code here -->
+                    <!-- Example node -->
+
+                
+                
+                <!-- Stats Overlay -->
+                <div class="absolute bottom-4 left-4 bg-zinc-900/80 p-4 rounded-xl">
+                    <h4 class="text-cyan-400 font-bold mb-2">Global Network</h4>
+                    <div class="grid grid-cols-3 gap-4">
+                        <div>
+                            <div class="text-cyan-400">Nodes Online</div>
+                            <div class="text-2xl font-bold">2</div>
+                        </div>
+                        <div>
+                            <div class="text-cyan-400">Countries</div>
+                            <div class="text-2xl font-bold">2</div>
+                        </div>
+                        <div>
+                            <div class="text-cyan-400">Latency</div>
+                            <div class="text-2xl font-bold">18ms</div>
+                        </div>
+                        <div>
+                            <div class="text-cyan-400">Nodes</div>
+                            <div class="text-2xl font-bold">
+			<div>
+			<span class="bg-blue-600 rounded-md p-1 m-1 text-sm hover:bg-blue-500"> 🎉 New Nodes</span>
+                        <text class="hover:text-cyan-100 text-2xl font-bold">Singapore, </text>
+                        <text class="hover:text-cyan-100 text-2xl font-bold ">India</text>
+			</div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Plans -->
+        <section id="plans" class="container mx-auto px-4 py-16">
+            <div class="max-w-6xl mx-auto text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                    Simple Pricing
+                </h2>
+                <p class="text-zinc-400">Start small and scale as you grow</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+               <div class="animate-card bg-zinc-800 p-8 rounded-xl border border-zinc-700">
+                    <h3 class="text-2xl font-bold mb-4">Newbie</h3>
+                    <div class="text-4xl font-bold mb-6">$2<span class="text-zinc-400 text-lg">/mo</span></div>
+                    <ul class="space-y-4 text-zinc-400 mb-8">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i>2 vCPU Cores</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i>4GB RAM</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i>80GB SSD</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-lg bg-zinc-700 hover:bg-cyan-600 transition-colors">Join Disocrd To Buy</button>
+                </div>
+<div class="animate-card bg-zinc-800 p-8 rounded-xl border border-zinc-700">
+    <h5 class="bg-blue-600 rounded-md p-1 my-2 text-sm hover:bg-blue-500 w-32">🔥 Best Selling</h5>
+    <h3 class="text-2xl font-bold mb-4">Starter</h3>
+                    <div class="text-4xl font-bold mb-6">$3<span class="text-zinc-400 text-lg">/mo</span></div>
+                    <ul class="space-y-4 text-zinc-400 mb-8">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i>4 vCPU Cores</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i>8GB RAM</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i>100GB SSD</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-lg bg-zinc-700 hover:bg-cyan-600 transition-colors">Join Discord To Buy</button>
+                </div>
+<div class="animate-card bg-zinc-800 p-8 rounded-xl border border-zinc-700">
+                    <h3 class="text-2xl font-bold mb-4">Starter</h3>
+                    <div class="text-4xl font-bold mb-6">$29<span class="text-zinc-400 text-lg">/mo</span></div>
+                    <ul class="space-y-4 text-zinc-400 mb-8">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i>2 vCPU Cores</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i>4GB RAM</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-cyan-400"></i>100GB SSD</li>
+                    </ul>
+                    <button class="w-full py-3 rounded-lg bg-zinc-700 hover:bg-cyan-600 transition-colors">Join Discord To Buy</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="container mx-auto px-4 py-16">
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Review cards from previous version -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-zinc-800 mt-32">
+        <div class="container mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                        Crinix Cloud
+                    </h3>
+                    <p class="text-zinc-400">Next-generation cloud infrastructure for modern applications</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-zinc-100 font-semibold mb-4">Solutions</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-zinc-400 hover:text-cyan-400">Web Hosting</a></li>
+                        <li><a href="#" class="text-zinc-400 hover:text-cyan-400">Edge Computing</a></li>
+                        <li><a href="#" class="text-zinc-400 hover:text-cyan-400">Database</a></li>
+                    </ul>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-zinc-100 font-semibold mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-zinc-400 hover:text-cyan-400">Privacy Policy</a></li>
+                        <li><a href="#" class="text-zinc-400 hover:text-cyan-400">Terms of Service</a></li>
+                        <li><a href="#" class="text-zinc-400 hover:text-cyan-400">Compliance</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div>
+                    <h4 class="text-zinc-100 font-semibold mb-4">Connect</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-zinc-400 hover:text-cyan-400">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-zinc-400 hover:text-cyan-400">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-zinc-400 hover:text-cyan-400">
+                            <i class="fab fa-discord text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="border-t border-zinc-800 mt-8 pt-8 text-center text-zinc-400">
+                <p>&copy; 2023 Crinix Cloud. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                }
+            });
+        });
+
+        document.querySelectorAll('.animate-card').forEach(el => {
+            el.classList.add('opacity-0', 'translate-y-8');
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
